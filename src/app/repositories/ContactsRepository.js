@@ -13,7 +13,9 @@ const contacts = [
 class ContactsRepository {
   findAll() {
     // Listar todos os registros
-    return contacts;
+    return new Promise((resolve) => {
+      resolve(contacts);
+    })
   }
 }
 
